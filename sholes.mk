@@ -15,6 +15,15 @@
 #
 
 #
+# Setup device specific product configuration.
+#
+PRODUCT_NAME := sholes
+PRODUCT_BRAND := motorola
+PRODUCT_DEVICE := sholes
+PRODUCT_MODEL := Droid
+PRODUCT_MANUFACTURER := Motorola
+
+#
 # This is the product configuration for a generic CDMA sholes,
 # not specialized for any geography.
 #
@@ -259,5 +268,5 @@ $(call inherit-product-if-exists, build/target/product/core_tiny.mk)
 
 PRODUCT_DEFAULT_LANGUAGE := en_US
 
-PRODUCT_NAME := mini_sholes
+PRODUCT_NAME := sholes
 PRODUCT_DEVICE := sholes

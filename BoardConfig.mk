@@ -57,7 +57,8 @@ BOARD_USE_YUV422I_DEFAULT_COLORFORMAT := true
 ARCH_ARM_HAVE_ARMV7A := true
 #TARGET_CPU_ABI := armeabi-v7a
 #TARGET_CPU_ABI2 := armeabi
-#TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_NEON := true
 #ARCH_ARM_HAVE_TLS_REGISTER := true #requires HAS_TLS_REG in kernel config
 
