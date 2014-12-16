@@ -171,17 +171,17 @@ PRODUCT_PACKAGES += \
     libOMX.TI.Video.Decoder \
     libOMX.TI.Video.encoder \
     libVendor_ti_omx \
-    hwcomposer.default \
-    VoiceDialer \
     drmserver \
     libdrmframework \
     libdrmframework_jni \
-    Torch \
-    liba2dp \
     sensors.sholes \
     lights.sholes \
-    MotoFM
-
+#    MotoFM
+#    Torch \
+#    liba2dp \
+#    hwcomposer.default \
+#    VoiceDialer \
+    
 #     LegacyCamera \ 
 #    PhaseBeam \
 #    WAPPushManager \
@@ -252,8 +252,8 @@ PRODUCT_LOCALES := en_US
 #$(call inherit-product-if-exists, external/svox/pico/lang/all_pico_languages.mk)
 
 # Get everything else from the parent package
-$(call inherit-product-if-exists, build/target/product/telephony.mk)
-$(call inherit-product-if-exists, build/target/product/full_trimmed.mk)
+#$(call inherit-product-if-exists, build/target/product/telephony.mk) - enough space?
+$(call inherit-product-if-exists, build/target/product/core_tiny.mk)
 #$(call inherit-product-if-exists, build/target/product/mini.mk)
 
 

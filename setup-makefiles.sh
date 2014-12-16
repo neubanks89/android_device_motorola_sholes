@@ -16,9 +16,9 @@
 
 DEVICE=sholes
 
-mkdir -p ../../../vendor/motorola/$DEVICE
+mkdir -p /home/parallels/android/vendor/motorola/$DEVICE
 
-(cat << EOF) | sed s/__DEVICE__/$DEVICE/g > ../../../vendor/motorola/$DEVICE/$DEVICE-vendor.mk
+(cat << EOF) | sed s/__DEVICE__/$DEVICE/g > /home/parallels/android/vendor/motorola/$DEVICE/$DEVICE-vendor.mk
 # Copyright (C) 2010 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -53,7 +53,7 @@ DEVICE_PACKAGE_OVERLAYS := vendor/motorola/__DEVICE__/overlay
 \$(call inherit-product, vendor/motorola/__DEVICE__/__DEVICE__-vendor-blobs.mk)
 EOF
 
-(cat << EOF) | sed s/__DEVICE__/$DEVICE/g > ../../../vendor/motorola/sholes/BoardConfigVendor.mk
+(cat << EOF) | sed s/__DEVICE__/$DEVICE/g > /home/parallels/android/vendor/motorola/sholes/BoardConfigVendor.mk
 # Copyright (C) 2010 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -75,8 +75,8 @@ BOARD_GPS_LIBRARIES := libmoto_gps
 USE_CAMERA_STUB := false
 EOF
 
-mkdir -p ../../../vendor/motorola/sholes/overlay/packages/apps/Launcher2/res/layout
-(cat << EOF) | sed s/__DEVICE__/$DEVICE/g > ../../../vendor/motorola/sholes/overlay/packages/apps/Launcher2/res/layout/all_apps.xml
+mkdir -p /home/parallels/android/vendor/motorola/sholes/overlay/packages/apps/Launcher2/res/layout
+(cat << EOF) | sed s/__DEVICE__/$DEVICE/g > /home/parallels/android/vendor/motorola/sholes/overlay/packages/apps/Launcher2/res/layout/all_apps.xml
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2010 The Android Open Source Project
 

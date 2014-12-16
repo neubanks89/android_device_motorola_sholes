@@ -3,7 +3,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE_TAGS    := eng debug
+#LOCAL_MODULE_TAGS    := eng debug
 LOCAL_MODULE_PATH    := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_MODULE         := camera.$(TARGET_BOOTLOADER_BOARD_NAME)
 LOCAL_SRC_FILES      := cameraHal.cpp JordanCameraWrapper.cpp

@@ -16,93 +16,93 @@
 
 DEVICE=sholes
 
-mkdir -p ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libmoto_gps.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libaudio.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libcamera.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libril_rds.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libnmea.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/egl/libEGL_POWERVR_SGX530_121.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/egl/libGLESv1_CM_POWERVR_SGX530_121.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/egl/libGLESv2_POWERVR_SGX530_121.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/hw/gralloc.omap3.so ../../../vendor/motorola/$DEVICE/proprietary
+mkdir -p /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libmoto_gps.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libaudio.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libcamera.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libril_rds.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libnmea.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/egl/libEGL_POWERVR_SGX530_121.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/egl/libGLESv1_CM_POWERVR_SGX530_121.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/egl/libGLESv2_POWERVR_SGX530_121.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/hw/gralloc.omap3.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
 
-adb pull /system/app/ProgramMenuSystem.apk ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/app/ProgramMenu.apk ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/app/PhoneConfig.apk ../../../vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/app/ProgramMenuSystem.apk /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/app/ProgramMenu.apk /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/app/PhoneConfig.apk /home/parallels/android/vendor/motorola/$DEVICE/proprietary
 
-adb pull /system/lib/libbattd.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libglslcompiler.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libHPImgApi.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libIMGegl.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libinterstitial.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libLCML.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/liblvmxipc.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libmoto_ril.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/liboemcamera.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libOMX.TI.AAC.decode.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libOMX.TI.AMR.encode.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libOMX.TI.MP3.decode.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libOMX.TI.WBAMR.decode.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libOMX.TI.WMA.decode.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libopencore_asflocal.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libopencore_asflocalreg.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libpppd_plugin-ril.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libpvr2d.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libpvrANDROID_WSEGL.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libspeech.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libsrv_um.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libVendor_ti_omx.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libVendor_ti_omx_config_parser.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libzxing.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/zxing.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/bin/akmd2 ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/bin/ap_gain.bin ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/bin/battd ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/bin/bthelp ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/bin/chat-ril ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/bin/ftmipcd ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/bin/mdm_panicd ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/bin/pppd-ril ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/bin/pvrsrvinit ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/bin/SaveBPVer ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/bin/tcmd ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/etc/01_Vendor_ti_omx.cfg ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/etc/cameraCalFileDef.bin ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/etc/contributors.css ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/etc/excluded-input-devices.xml ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/etc/firmware/wl1271.bin ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/etc/gps.conf ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/etc/motorola/12m/key_code_map.txt ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/etc/ppp/peers/pppd-ril.options ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/etc/pvplayer_mot.cfg ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/etc/updatecmds/google_generic_update.txt ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/etc/wifi/fw_wlan1271.bin ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/baseimage.dof ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/conversions.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/h264vdec_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/h264venc_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/jpegenc_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/m4venc_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/mp3dec_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/mp4vdec_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/mpeg4aacdec_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/mpeg4aacenc_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/nbamrdec_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/nbamrenc_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/postprocessor_dualout.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/ringio.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/usn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/wbamrdec_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/wbamrenc_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/wmadec_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/dsp/wmv9dec_sn.dll64P ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/usr/keychars/sholes-keypad.kcm.bin ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/usr/keylayout/cpcap-key.kl ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/usr/keylayout/sholes-keypad.kl ../../../vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libbattd.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libglslcompiler.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libHPImgApi.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libIMGegl.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libinterstitial.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libLCML.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/liblvmxipc.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libmoto_ril.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/liboemcamera.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libOMX.TI.AAC.decode.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libOMX.TI.AMR.encode.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libOMX.TI.MP3.decode.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libOMX.TI.WBAMR.decode.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libOMX.TI.WMA.decode.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libopencore_asflocal.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libopencore_asflocalreg.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libpppd_plugin-ril.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libpvr2d.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libpvrANDROID_WSEGL.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libspeech.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libsrv_um.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libVendor_ti_omx.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libVendor_ti_omx_config_parser.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/libzxing.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/zxing.so /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/bin/akmd2 /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/bin/ap_gain.bin /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/bin/battd /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/bin/bthelp /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/bin/chat-ril /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/bin/ftmipcd /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/bin/mdm_panicd /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/bin/pppd-ril /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/bin/pvrsrvinit /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/bin/SaveBPVer /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/bin/tcmd /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/etc/01_Vendor_ti_omx.cfg /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/etc/cameraCalFileDef.bin /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/etc/contributors.css /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/etc/excluded-input-devices.xml /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/etc/firmware/wl1271.bin /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/etc/gps.conf /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/etc/motorola/12m/key_code_map.txt /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/etc/ppp/peers/pppd-ril.options /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/etc/pvplayer_mot.cfg /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/etc/updatecmds/google_generic_update.txt /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/etc/wifi/fw_wlan1271.bin /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/baseimage.dof /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/conversions.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/h264vdec_sn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/h264venc_sn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/jpegenc_sn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/m4venc_sn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/mp3dec_sn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/mp4vdec_sn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/mpeg4aacdec_sn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/mpeg4aacenc_sn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/nbamrdec_sn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/nbamrenc_sn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/postprocessor_dualout.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/ringio.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/usn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/wbamrdec_sn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/wbamrenc_sn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/wmadec_sn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/lib/dsp/wmv9dec_sn.dll64P /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/usr/keychars/sholes-keypad.kcm.bin /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/usr/keylayout/cpcap-key.kl /home/parallels/android/vendor/motorola/$DEVICE/proprietary
+cp /home/parallels/system/usr/keylayout/sholes-keypad.kl /home/parallels/android/vendor/motorola/$DEVICE/proprietary
 
 
-(cat << EOF) | sed s/__DEVICE__/$DEVICE/g > ../../../vendor/motorola/$DEVICE/$DEVICE-vendor-blobs.mk
+(cat << EOF) | sed s/__DEVICE__/$DEVICE/g > /home/parallels/android/vendor/motorola/$DEVICE/$DEVICE-vendor-blobs.mk
 # Copyright (C) 2010 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
